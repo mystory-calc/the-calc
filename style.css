@@ -1,0 +1,42 @@
+#title {
+	text-align: center;
+	font-size: 30px;
+}
+#calc {
+	margin: 20px 200px;
+	text-align: center;
+	border: 2px solid;
+	border-radius: 10px;
+}
+
+#display {
+	border: 2px solid;
+	border-radius: 8px;
+	margin: 20px;
+	display: flex;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+#clear-display {
+	margin: 15px;
+}
+
+#display-opration {
+margin: 15px;
+}
+#calc-body{
+	border: 1px solid;
+	border-radius: 8px;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+#numbers{
+	width: 60%;
+	display: grid;
+	 grid-template-columns: auto auto auto auto;
+}
+#oprations{
+	width: 30%;
+}
