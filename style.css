@@ -3,7 +3,7 @@
 	font-size: 30px;
 }
 #calc {
-	margin: 20px auto;
+	margin: 20px 200px;
 	text-align: center;
 	border: 2px solid;
 	border-radius: 10px;
@@ -15,11 +15,48 @@
 	margin: 20px;
 	display: flex;
 	padding: 5px;
+	justify-content: space-between;
 }
 
 #clear-display {
-	margin-right: 5px;
+	margin: 15px;
 }
 
 #display-opration {
+margin: 15px;
+}
+#calc-body{
+	border: 1px solid;
+	border-radius: 8px;
+	margin: 20px;
+}
+#num-op {
+	display: flex;
+	justify-content: space-between;
+}
+
+#numbers{
+	margin: 10px;
+	width: 60%;
+	display: grid;
+	 grid-template-columns: auto auto auto;
+	 grid-gap: 5px;
+}
+#oprations{
+	width: 30%;
+	margin: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+}
+
+#equal-sign {
+	width: 50%;
+	margin-bottom: 10px
+}
+footer {
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
 }
