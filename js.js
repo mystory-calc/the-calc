@@ -13,14 +13,15 @@ console.log(checker)
 	if (checker === 'first') {
 
  		firstNumbers.push($(event.target).val())
- 		dis.text(parseInt(firstNumbers.join('')))
+ 		dis.text(parseFloat(firstNumbers.join('')))
  		console.log(firstNumbers)
 
  	}else if (checker === 'second'){
 
  		secondNumbers.push($(event.target).val())
 		console.log(secondNumbers)
-		dis.text( parseInt(secondNumbers.join('')))
+		dis.text( parseFloat
+			(secondNumbers.join('')))
 
  	}
  	
@@ -36,9 +37,10 @@ $('.op-btn').on('click', function(event){
 })
 
 function equal(firstNumbers, opO, secondNumbers){
-
-	var firstNumber = parseInt(firstNumbers.join(''));
-	var secondNumber = parseInt(secondNumbers.join(''));
+	console.log(firstNumbers)
+	var firstNumber = parseFloat(firstNumbers.join(''));
+	console.log(firstNumber)
+	var secondNumber = parseFloat(secondNumbers.join(''));
 	var result = 0;
 
 	switch(opO){
