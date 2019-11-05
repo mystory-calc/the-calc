@@ -92,5 +92,6 @@ footer {
  	transform: scale(1.1);
 }
 #img{
-	margin: 20px 300px;
+	display: block;
+	margin: 20px auto;
 }
