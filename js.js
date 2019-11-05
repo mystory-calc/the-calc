@@ -3,21 +3,27 @@ var firstNumbers = [];
 var secondNumbers = [];
 var opO = '';
 var checker = 'first';
+var dis = $('#display-opration')
 
 $('#img').hide()
 $('.num-btn').on('click', function(event){
 	if (checker === 'first') {
  		firstNumbers.push($(event.target).val())
+ 		dis.text(parseInt(firstNumbers.join('')))
  	console.log(firstNumbers)
  	}else if (checker === 'second'){
  		secondNumbers.push($(event.target).val())
 	console.log(secondNumbers)
+	dis.text( parseInt(secondNumbers.join('')))
  	}
+ 	
+
 })
 
 $('.op-btn').on('click', function(event){
 	opO = $(event.target).val();
 	checker = 'second'
+	dis.text(opO)
 })
 
 function equal(firstNumbers, opO, secondNumbers){
@@ -43,10 +49,12 @@ function equal(firstNumbers, opO, secondNumbers){
 		}
 		break;	
 	}
-	console.log(result);
+	dis.text(result);
 }
 
 $('#equal-sign').on('click', function(){
 	equal(firstNumbers, opO, secondNumbers);
 })
+
+
 
