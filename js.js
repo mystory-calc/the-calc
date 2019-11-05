@@ -1,5 +1,5 @@
 
-var firstNumbers = [];
+var firstNumbers = [0];
 var secondNumbers = [];
 var opO = '';
 var checker = 'first';
@@ -57,12 +57,19 @@ function equal(firstNumbers, opO, secondNumbers){
 		if (secondNumber === 0) {
 			console.log("we don't do that here");
 			$('#img').show();
+			$('#calc').hide()
 
 		}else {
 			result = firstNumber / secondNumber;
 
 		}
-		break;	
+		break;
+		case '√': 
+		result = Math.sqrt(firstNumber);
+			break;
+		case '^': 
+		result = Math.pow(firstNumber, secondNumber)
+			break;
 	}
 
 	dis.text(result);
@@ -80,7 +87,7 @@ $('#equal-sign').on('click', function(){
 
 function clearAll() {
 
-	firstNumbers = [];
+	firstNumbers = [0];
 	secondNumbers = [];
 	checker = 'first';
 	opO = '';
