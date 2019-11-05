@@ -1,4 +1,4 @@
-$('#one').click(function(){
-	
-	$('#display-opration').text('1');
+
+$('#numbers').on('click', function(event){
+	console.log($(event.target).val())
 })
