@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Mestory Calc</title>
+	<title>The Mistory Calc</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id="container">
 		<div id='title'>
-			<h1>The Mestory Calculator</h1>
+			<h1>The Mistory Calculator</h1>
 		</div>
 		<div id="calc">
 			<div id="display">
 				<button id="clear-display">C</button>
-				<p id="display-opration">put your numbers</p>
+				<p  id="display-opration">put your numbers</p>
 			</div>
 			<div id="calc-body">
-				<div id="numbers">
-					<button id="one">1</button>
-					<button id="two">2</button>
-					<button id="three">3</button>
-					<button id="four">4</button>
-					<button id="five">5</button>
-					<button id="six">6</button>
-					<button id="seven">7</button>
-					<button id="eghit">8</button>
-					<button id="nine">9</button>
-				</div>
-				<div id="oprations">
-					<button id="plus">+</button>
-					<button id="minus">-</button>
-					<button id="divide">/</button>
-					<button id="multiplay">*</button>
-					<button id="zero">0</button>
-					<button id="dot">.</button>
+				<div id="num-op">
+					<div id="numbers">
+						<button value="1" id="one" class="num-btn">1</button>
+						<button value="2" id="two" class="num-btn">2</button>
+						<button value="3" id="three" class="num-btn">3</button>
+						<button value="4" id="four" class="num-btn">4</button>
+						<button value="5" id="five" class="num-btn">5</button>
+						<button value="6" id="six" class="num-btn">6</button>
+						<button value="7" id="seven" class="num-btn">7</button>
+						<button value="8" id="eghit" class="num-btn">8</button>
+						<button value="9" id="nine" class="num-btn">9</button>
+					</div>
+					<div id="oprations">
+						<button id="plus" class="op-btn" value="+">+</button>
+						<button id="minus" class="op-btn" value="-">-</button>
+						<button id="divide" class="op-btn" value="/">/</button>
+						<button id="multiplay" class="op-btn" value="*">*</button>
+						<button id="zero" class="num-btn" value="0">0</button>
+						<button id="dot" class="op-btn" value=".">.</button>
+					</div>
 				</div>
 				<div id="equal">
 					<button id="equal-sign">=</button>
@@ -44,6 +46,10 @@
 			CopyRights By Muftah & Essam -2019
 		</footer>
 	</div>
-
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src='js.js'></script>
 </body>
 </html>

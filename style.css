@@ -29,14 +29,45 @@ margin: 15px;
 	border: 1px solid;
 	border-radius: 8px;
 	margin: 20px;
+}
+#num-op {
 	display: flex;
 	justify-content: space-between;
 }
+
 #numbers{
+	margin: 10px;
 	width: 60%;
 	display: grid;
-	 grid-template-columns: auto auto auto auto;
+	 grid-template-columns: auto auto auto;
+	 grid-gap: 5px;
+	 grid-template-rows: 40px 40px 40px;
 }
 #oprations{
 	width: 30%;
+	margin: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+	grid-template-rows:  40px 40px 40px;
+}
+
+#equal-sign {
+	width: 50%;
+	margin-bottom: 10px;
+	height: 40px;
+	font-size: 20px;
+
+}
+footer {
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+}
+.num-btn{
+	font-size: 20px;
+}
+.op-btn{
+	font-size: 20px;
 }
