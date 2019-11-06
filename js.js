@@ -26,7 +26,7 @@ $('.btns').on('click', function(event){
 	check = 2;
 	//if (checker === 'first') {
 
-		str += $(event.target).val();
+		str += $(event.target).text();
  		//firstNumbers.push($(event.target).val())
  		dis.text(str)
 
@@ -94,8 +94,10 @@ $('#equal-sign').on('click', function(){
 		$('#img').show();
 		$('#calc').hide()
 	}
+	if(str.indexOf('^') != -1){
+		str = str.replace('^', '**');
+	}
 	dis.text(eval(str));
-	console.log(eval(str))
 	str = eval(str)
 	check = 1;
 	//clearAll();
