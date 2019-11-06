@@ -3,10 +3,12 @@
 	font-size: 30px;
 }
 #calc {
-	margin: 20px 200px;
+	margin: 20px auto;
 	text-align: center;
 	border: 2px solid;
 	border-radius: 10px;
+	background-color: rgba(237, 187, 153, 1);
+	width: 500px;
 }
 
 #display {
@@ -16,6 +18,7 @@
 	display: flex;
 	padding: 5px;
 	justify-content: space-between;
+	background-color: white;
 }
 
 #clear-display {
@@ -29,6 +32,7 @@ margin: 15px;
 	border: 1px solid;
 	border-radius: 8px;
 	margin: 20px;
+	background-color: rgba(229, 152, 102,0.7);
 }
 #num-op {
 	display: flex;
@@ -41,7 +45,7 @@ margin: 15px;
 	display: grid;
 	 grid-template-columns: auto auto auto;
 	 grid-gap: 5px;
-	 grid-template-rows: 40px 40px 40px;
+	 grid-template-rows: 60px 60px 60px;
 }
 #oprations{
 	width: 30%;
@@ -57,6 +61,9 @@ margin: 15px;
 	margin-bottom: 10px;
 	height: 40px;
 	font-size: 20px;
+	background-color: rgba(249, 231, 159 ,0.65);
+	border: 2px solid #FADBD8;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 footer {
@@ -67,7 +74,24 @@ footer {
 }
 .num-btn{
 	font-size: 20px;
+	background-color: rgba(235, 152, 78);
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border: 2px solid #FADBD8;
+
 }
-.op-btn{
+.op-btn, #clear-display{
+	border-radius: 8px;
 	font-size: 20px;
+	background-color: rgba(245, 176, 65,0.6);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border: 2px solid #FADBD8;
+}
+
+.op-btn:active, .num-btn:active, #clear-display:active{
+ 	transform: scale(1.1);
+}
+#img{
+	display: block;
+	margin: 20px auto;
 }
