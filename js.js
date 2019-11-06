@@ -28,7 +28,7 @@ $('.btns').on('click', function(event){
 
 		str += $(event.target).text();
  		//firstNumbers.push($(event.target).val())
- 		dis.text(str)
+ 		dis.val(str)
 
  	//}else if (checker === 'second'){
 		// str += $(event.target).val();
@@ -90,14 +90,32 @@ $('.btns').on('click', function(event){
 
 $('#equal-sign').on('click', function(){
 	//var outCome = equal(firstNumbers, opO,secondNumbers)
-	if(eval(str) === Infinity){
-		$('#img').show();
-		$('#calc').hide()
+	if(dis.val()){
+		str = dis.val().split(' ').join('')
 	}
 	if(str.indexOf('^') != -1){
 		str = str.replace('^', '**');
 	}
-	dis.text(eval(str));
+
+	if(str.indexOf('√') != -1){
+		str = str.replace('√', '**0.5')
+		console.log(str)
+	}
+	var hasStr = str.match(/[a-z]/g);
+	console.log(hasStr)
+	if (hasStr != null) {
+		console.log(str)
+		$('#drake').show();
+		$('#calc').hide()
+	}else if (eval(str) === 2) {
+		$('#sbonge-meme').show();
+		$('#calc').hide()
+	}else if(eval(str) === Infinity){
+		$('#black').show();
+		$('#calc').hide()
+	} 
+
+	dis.val(eval(str));
 	str = eval(str)
 	check = 1;
 	//clearAll();
@@ -120,5 +138,5 @@ $('#equal-sign').on('click', function(){
 $('#clear-display').on('click',function () {
 	//clearAll();
 	str = ''
-	dis.text(0);
+	dis.val(0);
 })

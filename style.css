@@ -27,6 +27,12 @@
 
 #display-opration {
 margin: 15px;
+border: none;
+/*direction: rtl;
+*/width: 100%
+}
+#display-opration:focus {
+	outline: none;
 }
 #calc-body{
 	border: 1px solid;
@@ -91,7 +97,21 @@ footer {
 .op-btn:active, .num-btn:active, #clear-display:active{
  	transform: scale(1.1);
 }
-#img{
+.op-btn:focus, .num-btn:focus, #clear-display:focus {
+	outline: none;
+}
+
+#equal-sign:focus {
+	outline: none;
+}
+
+#equal-sign:active {
+	transform: scale(1.1);
+}
+
+
+.img{
 	display: block;
 	margin: 20px auto;
+	height: 500px
 }

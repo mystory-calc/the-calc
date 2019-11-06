@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Mistory Calc</title>
+	<title>The Mystery Calc</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id="container">
 		<div id='title'>
-			<h1>The Mistory Calculator</h1>
+			<h1>The Mystery Calculator</h1>
 		</div>
-		<div ><img style="display: none;" id="img" src="https://i.imgur.com/RUdPyQP.jpg"></div>
+		<div >
+			<img style="display: none;" id="black" class="img" src="https://i.imgur.com/RUdPyQP.jpg">
+			<img src="https://www.dropbox.com/s/jta6mvr5vr7nqs4/sbongebob%20meme.jpg?raw=1" style="display: none;"  class="img" id="sbonge-meme">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nk9w06zBkFtioCsNJ2BsTsXR9nQJg0Yf5nytpWbPPKfg2OXY&s" style="display: none;" class="img" id="drake">
+		</div>
 		<div id="calc">
-			<div id="display">
+			<div id="display">	
+				<input type="text" name="input" placeholder="0" value="" id="display-opration">
 				<button id="clear-display">C</button>
-				<p  id="display-opration">0</p>
 			</div>
 			<div id="calc-body">
 				<div id="num-op">
@@ -35,7 +39,7 @@
 						<button id="divide" class="op-btn btns" value="/">/</button>
 						<button id="multiplay" class="op-btn btns" value="*">*</button>
 						<button id="square" class="op-btn btns" value="**">^</button>
-						<button id="squareRoot" class="op-btn btns" value="√">√</button>
+						<button id="squareRoot" class="op-btn btns" value="**0.5">√</button>
 						<button id="zero" class="num-btn btns" value="0">0</button>
 						<button id="dot" class="num-btn btns" value=".">.</button>
 					</div>
